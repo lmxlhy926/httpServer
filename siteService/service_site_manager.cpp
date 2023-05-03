@@ -412,7 +412,7 @@ void ServiceSiteManager::rawHttpRequestHandler(const Request& request, Response&
 }
 
 int ServiceSiteManager::start(void) {
-    server.Post("/", ServiceSiteManager::rawHttpRequestHandler);
+    server.Post("/lhy/server", ServiceSiteManager::rawHttpRequestHandler);
 
     loadMessageSubscriber();
 
